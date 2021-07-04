@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+    CSD 360 Module 6
+</title>
+
+</head>
+<meta name="description"
+content="HTML5 and Javascript" />
+<meta name="keywords"
+content="Module 6, HTML5, CSS, JavaScript" />
+<meta name="author"
+content="Justin Brehms" />
+<meta name="robots" content="nofollow" />
+
+<body>
+    <style>
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 600px;
+        color: black;
+        text-align: center;
+    }
+    .table {
+        border: 2px solid black;
+        font-size: 1.4em;
+        color: navy;
+        text-align: center;
+        width: 500px;
+    }
+    .cells {
+        border: 1px solid black;
+        font-size: .8em;
+        color: navy;
+        text-align: center;
+    }
+
+    </style>
+
+           <div id="container">
+        <table class="table">
+            <tr>
+                <td colspan="100%">
+                    Fibonacci Sequence
+                </td>
+                
+            </tr>
+            <tr>
+        <td class="cells">
+            Iteration
+        </td>
+        <td class="cells">
+            Result
+        </td>
+        </tr>
+        <tr>
+            <td class='cells'>
+                1
+            </td>
+            <td class='cells'>
+                1
+            </td>
+        </tr>
+        <tr>
+            <td class='cells'>
+                2
+            </td>
+            <td class='cells'>
+                1
+            </td>
+        </tr>
+
+        <script type = "text/javascript">
+
+            var n1 = 1;
+            var n2 = 2;
+            var nextSequence;
+            for (let i = 3; i <= 30; i++) {
+                document.write("<tr><td class='cells'>" + i + "</td>");
+                nextSequence = n1 + n2;
+                document.write("<td class='cells'>" + n2 + "</td></tr>");
+                n1 = n2;
+                n2 = nextSequence;
+            }
+        </script>
+    
+        </table>
+    </div>
+</body>
+</html>

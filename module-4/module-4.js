@@ -20,4 +20,4 @@ document.write(i + (i % 3 )/ 7 - (2 + 7) ** 3); //113.28571428571433
 document.write("<br />");
 document.write(((i + i )% 3) / (7 - 2) + 7 ** 3); //343.2
 document.write("<br />");
-document.write('cannot seem to get 841.75')
+document.write(i + i % 3 / (7 - (2 + 7)) ** 3);
