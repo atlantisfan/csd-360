@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>
+    CSD 340 Development with HTML and CSS - Final HTML5 Landing Page
+</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<meta name="mimic the ouput to the console for javascript"
+content="HTML5 Landing Page - Final" />
+<meta name="keywords"
+content="Basic BIO, Portfolio Demo, HTML5, CSS" />
+<meta name="author"
+content="Justin Brehms" />
+<meta name="robots" content="nofollow" />
+<style>
+    #container{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-color: gray;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.2em;
+        width: 610px;
+        color:rgb(255, 255, 255);
+        border: 2px solid royalblue;
+        
+
+    }
+    #console{
+        background-color: black;
+        font-family: 'Inconsolata', monospace;
+        font-size: .8em;
+        color: blanchedalmond;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        &nbsp;Console.log() output of mod7.js
+        <div id="console">
+
+        <script type = "text/javascript">
+            var sportsTeams = ["Lakers" , "Wizards", "Bulls", "Knicks", "Nuggets", "Warriors", "Bucks", "Mavericks", "Spurs", "Rockets"];
+            //loop through the array and output to console
+            for(var i = 0; i < sportsTeams.length; i++){
+            document.write(sportsTeams[i] + "<br>");
+            }
+            document.write("<br>")
+            //loop backwards through array by taking the length -1 and decrementing the index
+            for(var i = sportsTeams.length;i > 0; i--){
+                document.write(sportsTeams[i-1] + "<br>");
+                }
+            
+            </script>
+            </div>
+	</div>
+</body>
+</html>
