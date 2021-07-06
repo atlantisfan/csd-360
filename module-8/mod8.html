@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+    CSD 360 Module 8
+</title>
+
+</head>
+<meta name="description"
+content="HTML5 and Javascript" />
+<meta name="keywords"
+content="Module 8, HTML5, CSS, JavaScript" />
+<meta name="author"
+content="Justin Brehms" />
+<meta name="robots" content="nofollow" />
+
+<style>
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 600px;
+        color: black;
+        text-align: center;
+    }
+    .table {
+        border: 2px solid black;
+        font-size: 1.4em;
+        color: navy;
+        text-align: center;
+        width: 500px;
+    }
+    .headers {
+        border: 1px solid black;
+        font-size: 1.2em;
+        color: rgb(253, 253, 253);
+        background-color:slategray;
+        font-weight: 400;
+        text-align: center;
+    }
+    .cells {
+        border: 1px solid black;
+        font-size: .8em;
+        color: navy;
+        text-align: center;
+    }
+
+    </style>
+<body>
+    <div id="container">
+    <table class="table">
+        <tr>
+            <td colspan=100% class="headers">
+                Table of Values
+            </td>
+        </tr>
+        <tr class="cells">
+            <th>
+                Initial Value
+            </th>
+            <th>
+                Square Root
+            </th>
+            <th>
+                Squared
+            </th>
+            <th>
+                Cubed
+            </th>
+        </tr>
+    
+    <script>
+        var numberSqRoot;
+        var numberSquare;
+        var numberCube;
+        var sqRootFormatted;
+        
+        for (let i = 4; i <= 14; i++) {
+        document.write("<tr><td class='cells'>" + i + "</td>");
+        numberSqRoot = Math.sqrt(i);
+        sqRootFormatted = numberSqRoot.toFixed(2);
+        document.write("<td class='cells'>" + sqRootFormatted + "</td>");
+        numberSquare = Math.pow(i, 2);
+        document.write("<td class='cells'>" + numberSquare + "</td>");
+        numberCube = Math.pow(i, 3);
+        document.write("<td class='cells'>" + numberCube + "</td></tr>");
+
+        }
+    </script>
+    </table>
+</div>
+</body>
+</html>
