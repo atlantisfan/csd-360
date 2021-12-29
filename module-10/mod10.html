@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+  'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+
+<html>
+  <head>
+    <title>
+      Module 10
+    </title>
+</head>
+<meta name="description"
+content="HTML5 and Javascript" />
+<meta name="keywords"
+content="Module 8, HTML5, CSS, JavaScript" />
+<meta name="author"
+content="Justin Brehms" />
+<meta name="robots" content="nofollow" />
+
+<style>
+    body {
+        background-color:rgb(4, 31, 52);
+        color: white;
+    }
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .text {
+        padding-left: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        width: 500px;
+        height: 520px;
+    }
+
+</style>
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+  </head>
+
+  <body>
+    <br />
+    <div id="container">
+      <a href=#
+         onmouseover="stargate.src='active.jpg';"
+         onmouseout= "stargate.src='inactive.jpg';"
+      >
+        <img border = 0 name = "stargate" src = "active.jpg">
+      </a>
+    </div>
+    <br />
+    <div class="text"
+         onmouseover="this.style.color='yellow';"
+         onmouseout= "this.style.color='white';">
+
+      Run your mouse over the image to activate the Star Gate.
+ 
+    <br />
+    <br />
+    <div 
+         onmouseover="this.style.color='lightgreen';"
+         onmouseout= "this.style.color='white';">
+
+      Run your mouse over the text to change the color
+      <br />
+      Right-click and select View Source for more details.
+
+    </div>
+
+  </body>
+
+</html>

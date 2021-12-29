@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+    CSD 360 Module 11
+</title>
+
+</head>
+<meta name="description"
+content="HTML5 and Javascript" />
+<meta name="keywords"
+content="Module 11, HTML5, CSS, JavaScript" />
+<meta name="author"
+content="Justin Brehms" />
+<meta name="robots" content="nofollow" />
+<script>
+
+    function displayImage(imageFile){
+      var largerImage = document.getElementById("mainImage");
+      var newNode = document.createElement("img");
+      newNode.id = "mainImage";
+      newNode.src = imageFile;
+      newNode.alt = "Large Image";
+      newNode.className = "mainImage";
+      newNode.style.width = "540px";
+      newNode.style.height = "540px";
+      largerImage.parentNode.replaceChild(newNode, largerImage);
+    }
+  </script>
+<style>
+    body {
+        background-color:rgb(4, 31, 52);
+        color: white;
+    }
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .text {
+        padding-left: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+</style>
+
+<body>
+    <div id="container">
+        <div id="tableholder">
+            <table>
+                <tr>
+                  <td rowspan="3">
+                    <img src="ball_001_sm.jpg"  id="mainImage" alt="Large Image"
+                    width = "640px" height = "640px">
+                  </td>
+                <td><img src="ball_002_sm.png"
+                         onclick="displayImage('ball_002.png')"
+                    ></td>
+                <td><img src="ball_003_sm.png"
+                         onclick="displayImage('ball_003.png')"
+                    ></td>
+                <td><img src="ball_004_sm.jpg"
+                         onclick="displayImage('ball_004.jpg')"
+                    ></td>
+                </tr>
+                <tr>
+                <td><img src="ball_005_sm.jpg"
+                         onclick="displayImage('ball_005.jpg')"
+                    ></td>
+                <td><img src="ball_006_sm.png"
+                         onclick="displayImage('ball_006.png')"
+                    ></td>
+                <td><img src="ball_007_sm.png"
+                         onclick="displayImage('ball_007.png')"
+                    ></td>
+                </tr>
+              </table>
+          
+        </div>
+	</div>
+</body>
+</html>
